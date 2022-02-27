@@ -1,0 +1,103 @@
+/* --------------------------------
+ 共通パーツ
+-------------------------------- */
+.section-block {
+    max-width: 900px;
+    margin: 0 auto 120px;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+/* --------------------------------
+ メインビジュアル
+-------------------------------- */
+.section-visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: none;
+    height: 620px;
+    margin-right: -50px;
+    margin-left: -50px;
+    padding: 0 50px;
+    background: url('../../img/top/img_main.jpg') no-repeat center center / cover;
+}
+.section-visual .slogan {
+    font-size: 70px;
+    line-height: 1.4;
+    color: #FFFFFF;
+}
+
+/* --------------------------------
+ このサイトで使っている技術
+-------------------------------- */
+.section-skill .list {
+    margin-bottom: 50px;
+}
+.section-skill .list li {
+    display: inline-block;
+    font-size: 22px;
+}
+.section-skill .list li:not(:last-child)::after {
+    content: "/";
+    margin: 0 5px 0 8px;
+}
+.section-skill .linktext {
+    margin-top: 1em;
+}
+
+/* --------------------------------
+ 自己紹介
+-------------------------------- */
+.section-profile {
+    max-width: none;
+    margin-right: -50px;
+    margin-left: -50px;
+    background-color: #F4F4F4;
+}
+.section-profile .inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 45px 50px 50px;
+}
+.section-profile .img {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 30px;
+}
+.section-profile .button-link {
+    margin-top: 28px;
+}
+
+/* --------------------------------
+ ブログ
+-------------------------------- */
+.section-blog .posts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px -30px 0;
+}
+.section-blog .posts li {
+    position: relative;
+    box-sizing: border-box;
+    width: 33.3%;
+    margin-top: 40px;
+    padding: 0 30px 50px;
+    text-align: left;
+}
+.section-blog .posts .img {
+    margin-bottom: 17px;
+}
+.section-blog .posts .img img {
+    display: block;
+}
+.section-blog .posts .button-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

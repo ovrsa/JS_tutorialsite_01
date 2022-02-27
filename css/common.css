@@ -1,0 +1,164 @@
+/* --------------------------------
+ Reset CSS
+-------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* --------------------------------
+ レイアウト
+-------------------------------- */
+body {
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    font-size: 16px;
+    color: #505050;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: #027CBB;
+    transition: color 0.3s, background-color 0.3s;
+}
+/* デフォルト状態 */
+a:link {
+}
+/* 既にクリックされたリンク */
+a:visited {
+    color: #999999;
+}
+/* マウスを乗っけたら */
+a:hover {
+    color: #64aade;
+    text-decoration: underline;
+}
+/* リンクを押している状態 */
+a:active {
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ヘッダー
+-------------------------------- */
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(3px);
+}
+#header .logo {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    font-size: 28px;
+}
+#header .gnav {
+    position: absolute;
+    right: 50px;
+    top: 28px;
+    font-size: 18px;
+}
+#header .gnav li {
+    display: inline-block;
+}
+#header .gnav li:not(:last-child) {
+    margin-right: 35px;
+}
+#header .gnav a {
+    color: #505050;
+}
+
+/* メインコンテツ
+-------------------------------- */
+#main {
+    padding: 90px 50px 0;
+}
+
+
+/* フッター
+-------------------------------- */
+#footer {
+    margin-top: 140px;
+    padding: 16px 50px;
+    background-color: #393939;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* --------------------------------
+ 共通パーツ
+-------------------------------- */
+
+/* ベーシックボタン
+-------------------------------- */
+.button-link {
+    text-align: center;
+}
+.button-link a {
+    display: inline-block;
+    padding: 9px 21px;
+    background-color: #468ABC;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.button-link a:hover {
+    background-color: #64aade;
+}
+
+/* ボタンS */
+.button-link.button-s a {
+    padding: 3px 27px;
+    font-size: 14px;
+}
